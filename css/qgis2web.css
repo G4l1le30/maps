@@ -36,7 +36,7 @@
             max-width: 70vw;
         }
         .leaflet-popup-content-wrapper {
-  max-width: 250px !important; /* Atur batas lebar maksimal, ubah angkanya jika perlu */
+  max-width: 300px !important; /* Atur batas lebar maksimal, ubah angkanya jika perlu */
   width: auto !important;      /* Biarkan lebar menyesuaikan konten secara otomatis */
 }
 

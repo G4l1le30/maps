@@ -754,3 +754,17 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_label_RTRW_16_eval_expression(context) {
+    // 'RT.' || RT || '/RW.' || RW
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((('RT.' + feature.properties['RT'] ) + '/RW.') + feature.properties['RW'] );
+    } else {
+        return ((('RT.' + feature['RT'] ) + '/RW.') + feature['RW'] );
+    }
+}

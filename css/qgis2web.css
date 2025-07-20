@@ -230,3 +230,18 @@
     object-fit: contain;
     margin-top: 10px;
 }
+/* Aturan Pengecualian untuk Popup RTRW dan lembagaSawah */
+
+/* Mengatur agar ukuran popup menyesuaikan dengan kontennya */
+.popup-rtrw .leaflet-popup-content,
+.popup-lembagasawah .leaflet-popup-content {
+    width: auto !important;
+    height: auto !important;
+    max-height: 200px; /* Opsional: Anda tetap bisa memberi batas tinggi maksimum */
+}
+
+/* Menghilangkan padding agar lebih ringkas (opsional) */
+.popup-rtrw .leaflet-popup-content-wrapper,
+.popup-lembagasawah .leaflet-popup-content-wrapper {
+    padding: 2px;
+}

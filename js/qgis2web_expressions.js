@@ -757,7 +757,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_label_RTRW_16_eval_expression(context) {
+function exp_label_RTRW_6_eval_expression(context) {
     // 'RT.' || RT || '/RW.' || RW
 
     var feature = context.feature;

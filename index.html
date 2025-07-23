@@ -53,7 +53,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-8.072867612727373,112.27348367556117],[-8.059345464751475,112.29768832043801]]);
+        }).fitBounds([[-8.071656449853059,112.280137936197],[-8.066358971470073,112.28842848986638]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -535,7 +535,7 @@
         });
         bounds_group.addLayer(layer_Kontur_LN_Gondang_4);
         map.addLayer(layer_Kontur_LN_Gondang_4);
-                function pop_RTRW_5(feature, layer) {
+         function pop_RTRW_5(feature, layer) {
     // Ambil data RT dan RW
     const rt = feature.properties['RT'];
     const rw = feature.properties['RW'];
@@ -578,6 +578,7 @@
     });
 }
 
+
         function style_RTRW_5_0() {
             return {
                 pane: 'pane_RTRW_5',
@@ -605,7 +606,7 @@
         });
         bounds_group.addLayer(layer_RTRW_5);
         map.addLayer(layer_RTRW_5);
-       function pop_lembagaSawah_6(feature, layer) {
+        function pop_lembagaSawah_6(feature, layer) {
     var lembagaNama = feature.properties['Lembaga'];
     var popupContent = '<b>' + (lembagaNama !== null ? 'lembaga ' + autolinker.link(String(lembagaNama).replace(/'/g, '\'').toLocaleString()) : '') + '</b>';
 
@@ -648,7 +649,6 @@
         }
     });
 }
-
 
         function style_lembagaSawah_6_0() {
             return {
